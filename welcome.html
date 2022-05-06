@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <title>小戳生日快乐~</title>
+    <link href="css/welcome.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="pageContain">
+        <div class="page page1 current">
+            <audio autoplay="autoplay" controls="controls" loop="loop" preload="auto"
+                src="bgm/Eric Lund - Summertime.mp3">
+                你的浏览器版本太低，不支持audio标签
+            </audio>
+            <div class="contain">
+                <div class="txt txt1">
+                    首先祝小戳生日快乐~
+                    <div class="tips">接下来滑动来享受这独属于你的时刻吧~</div>
+                </div>
+                <img src="img/gif.gif">
+            </div>
+        </div>
+
+        <div class="page page2">
+            <div class="contain">
+                <p class="txt txt2">2021/12/26-乐山
+                    <br>❣所有你乐于挥霍的时间❣<br>
+                    🎈都不算浪费~🎈
+                </p>
+            </div>
+        </div>
+
+        <div class="page page3">
+            <div class="contain">
+                <p class="txt txt3">2021/6/26-某草原
+                    <br>自由散漫的凉风<br>能治愈乱糟糟的坏心情！
+                </p>
+            </div>
+        </div>
+
+        <div class="page page4">
+            
+            <div class="contain">
+                <p class="txt txt4">就用某知名寿星的古老视频为你庆生吧🤞</p>
+                <video width="640" height="360" controls>
+                    <source src="video/mp4.mp4" type="video/mp4">
+                    <source src="video/mp4.mp4" type="video/ogg">
+                    您的浏览器不支持Video标签。
+                </video>
+            </div>
+        </div>
+
+        <div class="page page5">
+            <div class="contain">
+                <p class="txt txt5">到此就结束啦
+                    <br>最后祝小戳前程似这条路一般
+                    <br>一帆风顺直达前方的理想彼岸
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <ul id="navBar">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+
+    <script src="js/fullPage.min.js"></script>
+    <script>
+        var runPage;
+        runPage = new FullPage({
+            id: 'pageContain',
+            slideTime: 800,
+            effect: {
+                transform: {
+                    translate: 'X'
+                },
+                opacity: [0, 1]
+            },
+            mode: 'wheel, touch, nav:navBar',
+            easing: 'ease'
+        });
+    </script>
+
+</body>
+
+</html>
