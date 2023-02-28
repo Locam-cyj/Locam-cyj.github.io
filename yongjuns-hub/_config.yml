@@ -97,14 +97,14 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: redefine
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/Locam-cyj/Locam-cyj.github.io.git
-  branch: blog
+  repo: https://github.com/Locam-cyj/yongjuns-hub.git
+  branch: main
 # deploy:
 #   type: git
 #   repo: https://github.com/Locam-cyj/yongjuns-hub.git
